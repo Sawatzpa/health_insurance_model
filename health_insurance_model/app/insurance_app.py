@@ -131,7 +131,7 @@ if inputs.isna().sum() == 0:
     st.write(df_predictions.head())
     st.subheader("Lets make some Predition !")
 
-    gbr_model = joblib.load("health_insurance_model\model\gbr_insurance_model.pkl")
+    gbr_model = joblib.load("health_insurance_model/model/gbr_insurance_model.pkl")
 
     if st.button("Predict"):
         prediction = gbr_model.predict(
